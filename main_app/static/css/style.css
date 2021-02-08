@@ -109,7 +109,7 @@ html {
     padding: 0;
     }
     .masthead h1 {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
     }
@@ -333,9 +333,34 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     height: auto;
 }
 
+.pic-1 {
+    width: 100%;
+    height: 100vh;
+}
+
 .pic-2 {
     width: 100%;
     height: 100%;
+}
+
+.pic-3 {
+    width: 100%;
+    height: 100vh;
+}
+
+.pic-4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.pic-5 {
+    width: 100%;
+    height: 100vh;
+}
+
+.pic-6 {
+    width: 100%;
+    height: 110vh;
 }
 
 .row {
