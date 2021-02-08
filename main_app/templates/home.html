@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %} PhotoBook {% endblock %}
+{% block title %} Memento {% endblock %}
 
 {% block content %}
 
@@ -32,7 +32,9 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="https://images.pexels.com/photos/159850/book-glasses-read-professional-reading-159850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                <img src="https://images.unsplash.com/photo-1512580770426-cbed71c40e94?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1982&q=80" alt="" class="pic-2">
+                <img class="img-fluid mt-5" src="https://images.pexels.com/photos/159850/book-glasses-read-professional-reading-159850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                {% load static %}  <img src="{% static 'images/img.jpg' %}" alt="" class="pic-1 mt-5">
             </div>
         </section>
 
