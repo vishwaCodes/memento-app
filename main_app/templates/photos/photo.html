@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} View Photos {% endblock %}
+
+{% block content %}
+
+<section class="about-section text-center" id="about">
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col">
+            <div>
+                <img src="https://i.pinimg.com/736x/12/f4/09/12f409d9fe4fd48c8eeffc6e8b40df87.jpg" alt="">
+                <p class="mt-5" style="color: white;">Description</p>
+            </div>
+        <a class="btn btn-primary mt-5" href="{% url 'gallery' %}">Back to Photo Books</a>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+{% endblock %}
