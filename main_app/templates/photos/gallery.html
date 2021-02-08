@@ -30,8 +30,10 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Celadon</h4>
-                                    <p class="mb-0 text-white-50">Photo Book based off of the Celadon Theme</p>
+                                {% for photobook in photobooks %}
+                                <h4 class="list-group-item">{{ photobook.name }}<h4>
+                                {% endfor %}
+                                    {% comment %} <p class="mb-0 text-white-50 mt-5">Photo Book based off of the Celadon Theme</p> {% endcomment %}
                                     <a class="btn btn-primary mt-5" href="{% url 'photo' 1 %}">View</a>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
@@ -40,6 +42,8 @@
                     </div>
                 </div>
                 </div>
+
+                {% for photo in photos %}
 
                 <!-- Photo Book Two Row-->
                 <div class="row justify-content-center no-gutters">
@@ -57,14 +61,17 @@
                         </div>
                     </div>
                     </div>
-                </div>
-        </section>    
+                </div> 
+
+                {% endfor %}
+    
 
     </div>
 
 </div>
 
-    </section>
+</section>
+
 
 
 {% endblock %}

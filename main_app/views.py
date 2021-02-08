@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse 
+from django.http import HttpResponse
+from .models import Photobook, Photo
 
 
 # Create your views here.
@@ -11,7 +12,11 @@ def about(request):
     return render(request, 'about.html')
 
 def gallery(request):
-    return render(request, 'photos/gallery.html')
+    photobooks = Photobook.objects.all()
+    photos = Photo.objects.all()
+    
+    context = {'photobooks': photobooks, 'photos': photos}
+    return render(request, 'photos/gallery.html', context)
 
 def viewPhoto(request, pk):
     return render(request, 'photos/photo.html')
