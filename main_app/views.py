@@ -8,3 +8,6 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def photobooks(request):
+    return render (request, 'photobooks/index.html', { 'photobooks': photobooks })
