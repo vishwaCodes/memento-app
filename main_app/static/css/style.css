@@ -343,3 +343,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     margin-left: -0.75rem;
 }
 
+#abt {
+    font-size: 22px;
+}
+
+.btn {
+    transition: color 0.30s ease-in-out, background-color 0.30s ease-in-out, border-color 0.30s ease-in-out, box-shadow 0.30s ease-in-out;
+}
