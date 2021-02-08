@@ -67,7 +67,7 @@ html {
     width: 100%;
     min-height: 35rem;  
     padding: 15srem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.966) 0%, rgba(0, 0, 0, 0.644) 75%, #000000a8 100%), url("https://images.pexels.com/photos/724644/pexels-photo-724644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");  
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.966) 0%, rgba(0, 0, 0, 0.712) 75%, #00000094 100%), url("https://images.pexels.com/photos/724644/pexels-photo-724644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");  
     background-position: center; 
     background-repeat: no-repeat; 
     background-attachment: scroll;
@@ -374,10 +374,89 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     font-size: 20px;
 }
 
+#contact {
+    font-size: 20px;
+}
+
 #ph-book-nav {
     font-size: 20px;
 }
 
 .btn {
     transition: color 0.30s ease-in-out, background-color 0.30s ease-in-out, border-color 0.30s ease-in-out, box-shadow 0.30s ease-in-out;
+}
+
+.contact-section {
+    padding-top: 1rem;
+}
+
+.bg-black {
+    background-color: #000000e1 !important;
+}
+
+.contact-section .social {
+    margin-top: 2rem;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact-section .social a {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    background: rgba(255, 255, 255, 0.096);
+    border-radius: 100%;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.ml-2, .mx-2  {
+    margin-left: 0.5rem !important;
+}
+
+.ml-2, .mx-2  {
+    margin-right: 0.5rem !important;
+}
+
+small, .small  {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.footer {
+    padding: 3rem 0;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.mx-2:hover {
+    color: #5b9792ad !important;
 }
