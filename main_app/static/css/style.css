@@ -465,3 +465,13 @@ svg:not(:root).svg-inline--fa {
 .mx-2:hover {
     color: #5b9792ad !important;
 }
+
+#celadon {
+    width: 100%;
+    height: 70vh;
+}
+
+#lavender {
+    width: 100%;
+    height: 70vh;
+}
