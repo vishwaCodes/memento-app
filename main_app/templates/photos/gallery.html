@@ -13,10 +13,10 @@
     <div lass="col-lg-8 mx-auto">
 
 <div class="container mt-5">
-    <div class="row">
-                
-        <a class="btn btn-primary" href="{% url 'add' %}">Add a Photo</a>
 
+    <a id="add-photo" class="btn btn-primary mb-5" href="{% url 'add' %}">Add a Photo</a>
+    {% comment %} <div class="row"> {% endcomment %}
+                
         <section class="projects-section bg-light" id="projects">
         <div class="container">
         
@@ -34,7 +34,7 @@
                                 <h4 class="list-group-item">{{ photobook.name }}<h4>
                                 {% endfor %}
                                     {% comment %} <p class="mb-0 text-white-50 mt-5">Photo Book based off of the Celadon Theme</p> {% endcomment %}
-                                    <a class="btn btn-primary mt-5" href="{% url 'photo' 1 %}">View</a>
+                                    <a id="view" class="btn btn-primary mt-5" href="{% url 'photo' 1 %}">View</a>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -47,14 +47,14 @@
 
                 <!-- Photo Book Two Row-->
                 <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img id="lavender" class="img-fluid" src="https://iso.500px.com/wp-content/uploads/2015/10/lavender_cover.jpg" alt="" /></div>
+                    <div class="col-lg-6"><img id="lavender" class="img-fluid" src="{{photo.image.url}}" alt="" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Lavender</h4>
                                     <p class="mb-0 text-white-50">Photo Book based off of the Lavender Theme</p>
-                                    <a class="btn btn-primary mt-5" href="{% url 'photo' 2 %}">View</a>
+                                    <a id="view" class="btn btn-primary mt-5" href="{% url 'photo' 2 %}">View</a>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>

@@ -65,9 +65,9 @@ html {
     position: relative; 
     height: auto;
     width: 100%;
-    min-height: 35rem;  
+    min-height: 35rem;   
     padding: 15srem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.966) 0%, rgba(0, 0, 0, 0.712) 75%, #00000094 100%), url("https://images.pexels.com/photos/724644/pexels-photo-724644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");  
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.795) 0%, rgba(0, 0, 0, 0.466) 75%, #0000004f 100%), url("https://images.pexels.com/photos/724644/pexels-photo-724644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");  
     background-position: center; 
     background-repeat: no-repeat; 
     background-attachment: scroll;
@@ -274,7 +274,7 @@ header {
 }
 
 .btn-primary:focus {
-    background-color: #4f837f !important;
+    background-color: #4f8363 !important;
     border-color: #4f837f !important;
     outline: 0 !important;
 }
@@ -474,4 +474,38 @@ svg:not(:root).svg-inline--fa {
 #lavender {
     width: 100%;
     height: 70vh;
+}
+
+#add-photo {
+    align-items: center;
+    background-color:  #71b482;
+    color:rgba(247, 247, 247, 0.925);  
+    border: 0;
+    padding: 1.25rem 2rem;
+    text-transform: uppercase;  
+    letter-spacing: 0.15rem;
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1); 
+    display: inline-block;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#add-photo:hover {
+    background-color: rgba(104, 94, 94, 0.568) !important;
+}
+
+#view {
+    align-items: center;
+    background-color: #71b482;
+    color:rgba(247, 247, 247, 0.925);  
+    border: 0;
+    padding: 1.25rem 2rem;
+    text-transform: uppercase;  
+    letter-spacing: 0.15rem;
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1); 
+    display: inline-block;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#view:hover {
+    background-color: rgba(104, 94, 94, 0.568)!important;
 }
