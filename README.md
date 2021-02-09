@@ -19,7 +19,7 @@ Memento is still under construction and will be available out in the real world 
 
 # A little Preview
 
--Home Page
+- Home Page
 
 <img width="1440" alt="Screen Shot 2021-02-09 at 2 26 39 PM" src="https://user-images.githubusercontent.com/73917422/107416822-eca01780-6ae2-11eb-87a3-7c9ee482bd90.png">
 
