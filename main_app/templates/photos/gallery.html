@@ -9,17 +9,10 @@
 <section class="about-section text-center" id="about">
 
     <div class="col-lg-8 mx-auto">
-        <h2 class="text-white mt-5">Your Photo Books</h2>
+        <h2 class="text-white mt-5"></h2>
     <div lass="col-lg-8 mx-auto">
 
 <div class="container mt-5">
-
-    <a id="add-photo" class="btn btn-primary mb-5" href="{% url 'add' %}">Add a Photo</a>
-    {% comment %} <div class="row"> {% endcomment %}
-                
-        <section class="projects-section bg-light" id="projects">
-        <div class="container">
-        
             <section class="projects-section bg-light" id="projects">
             <div class="container">
                 <!-- Photo Book One Row-->
@@ -31,9 +24,10 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                 {% for photobook in photobooks %}
-                                <h4 class="list-group-item">{{ photobook.name }}<h4>
+                                <h4 id="name1"></br>
+                                {{ photobook.name }}<h4>
                                 {% endfor %}
-                                    {% comment %} <p class="mb-0 text-white-50 mt-5">Photo Book based off of the Celadon Theme</p> {% endcomment %}
+                                <a id="add-photo" class="btn btn-primary mt-5" href="{% url 'add' %}">Add</a>
                                     <a id="view" class="btn btn-primary mt-5" href="{% url 'photo' 1 %}">View</a>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
@@ -41,30 +35,72 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </section>
+</div>
 
-                {% for photo in photos %}
+{% for photo in photos %}
 
-                <!-- Photo Book Two Row-->
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img id="lavender" class="img-fluid" src="{{photo.image.url}}" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
+<section class="projects-section bg-light" id="projects">
+            <div class="container">
+                <!-- Photo Book One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img id="celadon" class="img-fluid" src="{photo.image.url}}" alt="" />
+                    </div>
+                    <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Lavender</h4>
-                                    <p class="mb-0 text-white-50">Photo Book based off of the Lavender Theme</p>
-                                    <a id="view" class="btn btn-primary mt-5" href="{% url 'photo' 2 %}">View</a>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                {% for photobook in photobooks %}
+                                <h4 id="name1"></br>
+                                {{ photobook.name }}<h4>
+                                {% endfor %}
+                                <a id="add-photo" class="btn btn-primary mt-5" href="{% url 'add' %}">Add</a>
+                                    <a id="view" class="btn btn-primary mt-5" href="{% url 'photo' 1 %}">View</a>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
-                </div> 
+                </div>
+            </section>
+</div>
 
-                {% endfor %}
-    
+{% endfor %}
+
+
+                {% comment %} <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="{{photo.image.url}}" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">{{ photobook.name }}</h4>
+                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+
+
+        <!-- Share Option -->
+        <section class="share-section" id="share"> 
+            <div class="container">
+                <div id="row-share" class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                            <h2 class="text-white mb-5">Are you a proud Memento Parent?</h2>
+                            <h2 class="text-white mb-5">Brighten up someone's day by sharing {{ photobook.name }} <h2>
+                        <form class="form-inline d-flex">
+                            <input id="input-email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                            <button class="btn btn-primary btn btn-sm mx-auto" type="submit">Share</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> 
 
     </div>
 
