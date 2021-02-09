@@ -4,7 +4,7 @@ Not just a Photo Book, but a **Memento** to store all your precious stories, mem
 
 # A Little Side Note
 
-Memento is still under construction and will be available out in the real world once it's been tested out and has all the optimal features for Users to enjoy.
+Memento is still under construction and will be available out in the real world once it's been tested out and has all the optimal features for the User to enjoy.
 
 # Technologies Used
 
