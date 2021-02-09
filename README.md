@@ -6,11 +6,12 @@ Not just a Photo Book, but a **Memento** to store all your precious stories, mem
 
 Memento is still under construction and will be available out in the real world once it's been tested out and has all the optimal features for Users to enjoy.
 
-# Technologies Currently Being Used
+# Technologies Used
 
 - Python
 - Django
 - JavaScript
+- HTML
 - Bootstrap
 - CSS
 - Amazon AWS
